@@ -1,0 +1,7 @@
+.venv/
+*.docx
+__pycache__/
+*.pyc
+.pytest_cache/
+.gradio/
+.DS_Store
