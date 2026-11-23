@@ -36,7 +36,7 @@ jobs:
       - uses: huggingface/hub-sync@v0.3.0
         with:
           github_repo_id: ${{ github.repository }}
-          huggingface_repo_id: ${{ vars.HF_SPACE_ID }}
+          huggingface_repo_id: ${{ vars.HF_SPACE_ID || 'Dylbot/AAI6610-Module10' }}
           hf_token: ${{ secrets.HF_TOKEN }}
           space_sdk: gradio
           subdirectory: credit-risk-space
